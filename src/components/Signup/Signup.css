@@ -1,0 +1,70 @@
+ .signup-cont{
+    /* border: 2px solid red; */
+
+ }
+ .form-cont{
+    border-bottom: 4px solid cyan;
+    border-left: 4px solid cyan;
+    border-right: 2px solid rgb(135, 232, 232);
+    border-top: 2px solid rgb(135, 232, 232);
+    width: 400px;
+    background-color: aliceblue;
+    /* position: relative; */
+ }
+ .signup-btn{ 
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    /* margin-left: -282px; */
+ }
+ .toast-div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   top: 25vh;
+ }
+
+
+ .nameValid{
+   color: red;
+   font-size: 12px;
+   display: flex;
+   flex-wrap: wrap;
+   text-align: justify;
+   /* border: 1px solid blue; */
+ }
+ 
+  .error-name {
+    color: red;
+    font-size: 0.8em;
+    /* margin-top: 5px;
+    position: absolute; */
+    /* top: 34px; */
+
+  }
+  .valid {
+    border: 3px solid green;
+    background-color: rgb(158, 229, 158);
+  }
+
+  .invalid {
+    border: 3px solid red;
+    background-color: rgb(247, 102, 102);
+  }
+
+  .lod-div{
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+      position: relative;
+    top: 43vh !important;
+}
+.toast-div2{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+      position: absolute;
+    background-color: aliceblue;
+    top: 43vh !important;
+}

@@ -1,0 +1,582 @@
+.user-cont {
+  /* border: 2px solid rebeccapurple; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e9ecef;
+  /* height: ; */
+}
+.main-user {
+  /* border: 1px solid green; */
+  width: 50%;
+  height: 400px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+      font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+ position: relative;
+}
+.user-data {
+  /* color: darkblue; */
+      background: -webkit-linear-gradient(#523892, cyan,purple);
+  font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.age-div {
+  /* border: 1px solid red; */
+  width: 80%;
+  gap: 2px;
+}
+.age-label {
+  /* border: 1px solid black; */
+  width: 20%;
+  text-align: left;
+  /* height: 40px; */
+}
+.age-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 50%;
+  /* height: 40px; */
+}
+
+
+
+/* ///gender.......... */
+
+
+.gen-div {
+  /* border: 1px solid red; */
+  width: 80%;
+}
+.gen-label {
+  /* border: 1px solid black; */
+  width: 20%;
+  text-align: left;
+  /* height: 40px; */
+}
+.gen-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 50%;
+  /* height: 40px; */
+}
+
+/* /// */
+
+.dob-div {
+  /* border: 1px solid red; */
+  width: 80%;
+}
+.dob-label {
+  /* border: 1px solid black; */
+  width: 20%;
+  text-align: left;
+  /* height: 40px; */
+}
+.dob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 50%;
+  /* height: 40px; */
+}
+
+/* ////......... */
+
+.mob-div {
+  /* border: 1px solid red; */
+  width: 80%;
+}
+.mob-label {
+  /* border: 1px solid black; */
+  width: 20%;
+  text-align: left;
+  /* height: 40px; */
+}
+.mob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 50%;
+  /* height: 40px; */
+}
+
+.btn{
+    /* background-color: aqua !important; */
+    /* border: 1px solid red !important; */
+     color: #c9d1d9 !important;
+     border: none;
+    background-image: linear-gradient(to bottom right, #0b0b4a, rgb(0 255 253), #091e43);
+}
+
+
+.lod{
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+ 
+    top: 43vh !important;
+}
+.toast-div-cont{
+    position: absolute;
+    background-color: cyan;
+
+}
+.btn-sm-btn{
+       color: #e9ecef;
+    background-color: #fb8484;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.toast-div-cont2{
+    position: absolute;
+    background-color: cyan;
+
+}
+.toast-div-cont3{
+    position: absolute;
+    background-color: cyan;
+
+}
+.toast-div-cont4{
+   position: absolute;
+    background-color: rgb(238, 128, 146);
+    /* top: 47vh;
+    left: 45vw; */
+}
+
+
+@media all and (min-width:992px) and (max-width:1240px){
+
+
+
+    .age-div {
+  /* border: 1px solid red; */
+  width: 90%;
+  /* gap: 2px; */
+}
+.age-label {
+  /* border: 1px solid black; */
+  width: 20%;
+  text-align: left;
+  /* height: 40px; */
+}
+.age-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+width: 60%;
+  /* height: 40px; */
+}
+
+
+
+
+.gen-div {
+  /* border: 1px solid red; */
+  width: 90%;
+}
+.gen-label {
+  /* border: 1px solid black; */
+  width: 20%;
+  text-align: left;
+  /* height: 40px; */
+}
+.gen-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+ width: 60%;
+  /* height: 40px; */
+}
+
+/* /// */
+
+.dob-div {
+  /* border: 1px solid red; */
+  width: 90%;
+}
+.dob-label {
+  /* border: 1px solid black; */
+  width: 20%;
+  text-align: left;
+  /* height: 40px; */
+}
+.dob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+ width: 60%;
+  /* height: 40px; */
+}
+
+/* ////......... */
+
+.mob-div {
+  /* border: 1px solid red; */
+  width: 90%;
+}
+.mob-label {
+  /* border: 1px solid black; */
+  width: 20%;
+  text-align: left;
+  /* height: 40px; */
+}
+.mob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 60%;
+  /* height: 40px; */
+}
+ 
+}
+
+
+@media all and (min-width:768px) and (max-width:992px){
+
+    
+    .age-div {
+  /* border: 1px solid red; */
+  width: 100%;
+  gap: 2px;
+}
+.age-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.age-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+width: 75%;
+  /* height: 40px; */
+}
+
+
+
+
+.gen-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.gen-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.gen-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+ width: 75%;
+  /* height: 40px; */
+}
+
+/* /// */
+
+.dob-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.dob-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.dob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+ width: 75%;
+  /* height: 40px; */
+}
+
+/* ////......... */
+
+.mob-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.mob-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.mob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 75%;
+  /* height: 40px; */
+}
+ 
+}
+
+@media all and (min-width:575px) and (max-width:767px){
+
+
+    .main-user {
+  /* border: 1px solid green; */
+  width: 70%;
+  height: 400px;
+  padding: 20px;
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  
+}
+
+    .age-div {
+  /* border: 1px solid red; */
+  width: 100%;
+  gap: 2px;
+}
+.age-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.age-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+width: 75%;
+  /* height: 40px; */
+}
+
+
+
+
+.gen-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.gen-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.gen-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+ width: 75%;
+  /* height: 40px; */
+}
+
+/* /// */
+
+.dob-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.dob-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.dob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+ width: 75%;
+  /* height: 40px; */
+}
+
+/* ////......... */
+
+.mob-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.mob-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.mob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 75%;
+  /* height: 40px; */
+}
+
+ 
+}
+
+@media all and (min-width:425px) and (max-width:574px){
+
+      .main-user {
+  /* border: 1px solid green; */
+  width: 75%;
+  height: 400px;
+  padding: 20px;
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+     gap: 33px;
+}
+
+    .age-div {
+  /* border: 1px solid red; */
+  width: 100%;
+  gap: 2px;
+}
+.age-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.age-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+width: 75%;
+  /* height: 40px; */
+}
+
+
+
+
+.gen-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.gen-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.gen-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+ width: 75%;
+  /* height: 40px; */
+}
+
+/* /// */
+
+.dob-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.dob-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.dob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+ width: 75%;
+  /* height: 40px; */
+}
+
+/* ////......... */
+
+.mob-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.mob-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.mob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 75%;
+  /* height: 40px; */
+}
+
+ 
+}
+
+@media all and (min-width:320px) and (max-width:424px){
+
+    .main-user {
+  /* border: 1px solid green; */
+  width: 90%;
+  height: 400px;
+  padding: 20px;
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+     gap: 33px;
+}
+
+    .age-div {
+  /* border: 1px solid red; */
+  width: 100%;
+  gap: 2px;
+}
+.age-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.age-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+width: 75%;
+  /* height: 40px; */
+}
+
+
+
+
+.gen-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.gen-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.gen-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+ width: 75%;
+  /* height: 40px; */
+}
+
+/* /// */
+
+.dob-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.dob-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.dob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+ width: 75%;
+  /* height: 40px; */
+}
+
+/* ////......... */
+
+.mob-div {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+.mob-label {
+  /* border: 1px solid black; */
+  width: 25%;
+  text-align: left;
+  /* height: 40px; */
+}
+.mob-ip {
+  /* border: 1px solid rgb(0, 0, 0); */
+  width: 75%;
+  /* height: 40px; */
+}
+}
