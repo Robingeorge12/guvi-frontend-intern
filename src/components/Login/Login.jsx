@@ -44,7 +44,7 @@ function Login({ tokenVal, setTokenVal }) {
   }, [loginSucc]);
   
   // console.log( users, isLoading,  loginSucc);
-  console.log(failHints);
+  // console.log(failHints);
 
   // create one small toast that will show login successfully
   // let Per = JSON.parse(localStorage.getItem("user_data"));
@@ -57,7 +57,7 @@ function Login({ tokenVal, setTokenVal }) {
     },
     onSubmit: async (value) => {
       // must use async await
-      console.log(value);
+      // console.log(value);
       await dispatch(post_login(value));
       formik.resetForm();
       //  setLoginSuccess(true);

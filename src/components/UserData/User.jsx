@@ -8,9 +8,9 @@ function User() {
   const dispatch = useDispatch()
   
   let allD = JSON.parse(localStorage.getItem("login_data"));
-  console.log(allD);
+  // console.log(allD);
   const [val, setVal] = useState([allD]);
-    console.log(val);
+    // console.log(val);
   const [data, setData] = useState({
     email: allD?.email || "",
     username: allD?.username || "",
@@ -20,6 +20,7 @@ function User() {
     dob: allD?.dob || "",
     mobile: allD?.mobile || "",
   });
+  // console.log(data);
   const [showToast, setShowToast] = useState(false)
   const [show2, setShow2] = useState(false);
   const [show3, setShow3] = useState(false);
@@ -95,7 +96,7 @@ if (isLoading) {
                 <button
                   type="button"
                   className="btn-sm-btn"
-                  onClick={() => setShowToast(false)} 
+                  onClick={() => setShowToast(false)}
                   data-bs-dismiss="toast"
                 >
                   Close
@@ -106,31 +107,31 @@ if (isLoading) {
         </div>
       )}
 
-      {show3 &&   (
-       <div className="toast-item toast-div-cont3">
-         <div
-           className="toast fade show toast-item-div"
-           role="alert"
-           aria-live="assertive"
-           aria-atomic="true"
-         >
-           <div className="toast-body">
-             {isSuccess}
-             <div className="mt-2 pt-2 border-top">
-               <button
-                 type="button"
-                 className="btn btn-secondary btn-sm"
-                 onClick={()=>setShow3(false)}
-                 data-bs-dismiss="toast"
-               >
-                 Close
-               </button>
-             </div>
-           </div>
-         </div>
-       </div>
+      {show3 && (
+        <div className="toast-item toast-div-cont3">
+          <div
+            className="toast fade show toast-item-div"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div className="toast-body">
+              {isSuccess}
+              <div className="mt-2 pt-2 border-top">
+                <button
+                  type="button"
+                  className="btn btn-secondary btn-sm"
+                  onClick={() => setShow3(false)}
+                  data-bs-dismiss="toast"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
-      
+
       {show4 && (
         <div className="toast-item toast-div-cont4">
           <div
@@ -145,7 +146,7 @@ if (isLoading) {
                 <button
                   type="button"
                   className="btn btn-secondary btn-sm"
-                  onClick={()=>setShow4(false)}
+                  onClick={() => setShow4(false)}
                   data-bs-dismiss="toast"
                 >
                   Close
@@ -157,17 +158,44 @@ if (isLoading) {
       )}
       <div className="main-user">
         <h3 className="user-data">USER DATA</h3>
- 
+
         <div>
           <Log />
         </div>
-        
+
+        <div className="name-div">
+          <label htmlFor="" className="name-label">
+            Name
+          </label>
+          <input
+            type="text"
+            defaultValue={data?.username}
+            onChange={(e) => setData({ ...data, name: e.target.value })}
+            className="name-ip"
+            placeholder="ENTER YOUR AGE"
+          />
+        </div>
+
+        <div className="email-div">
+          <label htmlFor="" className="email-label">
+            Email
+          </label>
+          <input
+            defaultValue={data?.email}
+            type="email"
+            onChange={(e) => setData({ ...data, email: e.target.value })}
+            className="email-ip"
+            placeholder="ENTER YOUR AGE"
+          />
+        </div>
+
         <div className="age-div">
           <label htmlFor="" className="age-label">
             Age
           </label>
           <input
             type="number"
+            defaultValue={data?.age}
             onChange={(e) => setData({ ...data, age: e.target.value })}
             className="age-ip"
             placeholder="ENTER YOUR AGE"
@@ -180,6 +208,7 @@ if (isLoading) {
           </label>
           <select
             className="gen-ip"
+            defaultValue={data?.gender}
             onClick={(e) => setData({ ...data, gender: e.target.value })}
           >
             <option value="" default>
@@ -197,6 +226,7 @@ if (isLoading) {
           </label>
           <input
             type="date"
+            defaultValue={data?.dob ? new Date(data.dob).toISOString().substr(0, 10) : ""}
             onChange={(e) => setData({ ...data, dob: e.target.value })}
             className="dob-ip"
             placeholder="SELECT YOUR DOB"
@@ -209,6 +239,7 @@ if (isLoading) {
           </label>
           <input
             type="number"
+            defaultValue={data?.mobile}
             className="mob-ip"
             onChange={(e) => setData({ ...data, mobile: e.target.value })}
             placeholder="ENTER YOUR  MOBILE NUMBER"

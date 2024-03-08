@@ -22,12 +22,12 @@ export const authSlice = createSlice({
      }).addCase(post_sign.fulfilled,(state,action)=>{
         state.isLoading = false;
         state.isError = false;
-        console.log(action.payload)
+        // console.log(action.payload)
         state.users = action.payload
     }).addCase(post_sign.rejected,(state,action)=>{
         state.isLoading = false;
         state.isError = true;
-        console.log(action.payload.message.response.data.message)
+        // console.log(action.payload.message.response.data.message)
         state.failHints = action.payload.message.response.data.message;
     })
 
@@ -42,7 +42,7 @@ export const authSlice = createSlice({
          state.isLoading = false;
 
 
-         console.log(action.payload);
+        //  console.log(action.payload);
 
 
         //  let token = action.payload.token;
@@ -51,7 +51,7 @@ export const authSlice = createSlice({
          state.users = action.payload.isSendUser;
      
 
-         console.log(action.payload.isSendUser);
+        //  console.log(action.payload.isSendUser);
      
          localStorage.setItem(
            "login_data",
@@ -61,7 +61,7 @@ export const authSlice = createSlice({
        .addCase(post_login.rejected, (state, action) => {
          state.isError = true;
          state.isLoading = false;
-         console.log(action.payload.message.response.data.message);
+        //  console.log(action.payload.message.response.data.message);
          state.failHints = action.payload.message.response.data.message;
        });
   },

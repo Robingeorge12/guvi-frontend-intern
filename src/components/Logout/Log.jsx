@@ -1,17 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Log.css"
 import { useNavigate } from 'react-router-dom';
 
 function Log() {
-    const navigate = useNavigate()
-    const handleOut = () => {
+  const navigate = useNavigate()
+  const [bool,setBool] = useState(false)
 
+    const handleOut =  () => {
         localStorage.removeItem("token");
-        localStorage.removeItem("login_data");
+      localStorage.removeItem("login_data");
 
-        navigate("/")
+     setTimeout(() => {
+       navigate("/");
+       setBool(true)
+          }, 100);
 
+          
+      setTimeout(() => {
+            setBool(true);
+            window.location.reload();
+          }, 100);
+      // window.location.reload();
+      // navigate("/")
+  }
 
+ 
+if (bool) {
+  return (
+    <div
+      className="spinner-border  text-success lod23"
+      style={{ width: "5rem", height: "5rem" }}
+      role="status"
+    >
+      <span className="visually-hidden">Loading...</span>
+    </div>
+  );
 }
 
   return (
